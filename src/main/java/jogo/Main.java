@@ -8,7 +8,10 @@ public class Main {
        Arma peixeira = new Arma("Peixeira", 20, 0);
        Arma chinela = new Arma("Chinela havaiana", 5, 0);
        Pocao corote = new Pocao("Corote", 5);
-       Armadura capaceteArmadura = new Armadura();
+       Armadura capaceteArmadura = new Armadura("Capacete");
+       Armadura peitoralArmadura = new Armadura("Peitoral");
+       Armadura calcaArmadura = new Armadura("Calça");
+       Armadura botaArmadura = new Armadura("Bota");
 
        raimundo.setArma(peixeira);
        madruga.setArma(chinela);
@@ -46,7 +49,9 @@ public class Main {
         double randNum = Math.random(); // 0 >= num > 1.0
         if (randNum < 0.3) {
             System.out.println("Encontrou um inimigo");
+            
         }
-        System.out.println(randNum);
+    
     }
+}
 }

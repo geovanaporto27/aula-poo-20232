@@ -1,4 +1,6 @@
 package jogo;
+import java.lang.Math
+;
 
 public class Armadura {
     private int capacete;
@@ -6,54 +8,48 @@ public class Armadura {
     private int calca;
     private int bota;
 
-    public Armadura(int capacete, int peitoral, int calca, int bota ) {
+    public Armadura() {
         this.capacete = 20;
         this.peitoral = 40;
         this.calca = 30;
         this.bota = 10;
     }
 
-    public int getCapacete() {
-        return capacete;
-        int randNum = (int) Math.random(); // 0 >= num > 20
-        if (randNum < 20) {
-            int dano = dano - randNum;
-        }
+    public Armadura(String string) {
     }
+
+    public int getCapacete() {
+        return (int) Math.random() * capacete;
+    }
+
     public void setCapacete(int capacete) {
         this.capacete = capacete;
     }
+
     public int getPeitoral() {
-        return peitoral;
-        int randNum = (int) Math.random(); // 0 >= num > 40
-        if (randNum < 40) {
-            int dano = dano - randNum;
-        }
+        return (int) Math.random() * peitoral;
     }
+
     public void setPeitoral(int peitoral) {
         this.peitoral = peitoral;
     }
+
     public int getCalca() {
-        return calca;
-        int randNum = (int) Math.random(); // 0 >= num > 30
-        if (randNum < 30) {
-            int dano = dano - randNum;
-        }
+        return (int) Math.random() * calca;
     }
+
     public void setCalca(int calca) {
         this.calca = calca;
     }
+
     public int getBota() {
-        return bota;
-        int randNum = (int) Math.random(); // 0 >= num > 10
-        if (randNum < 10) {
-            int dano = dano - randNum;
-        }
+        return (int) Math.random() * bota;
     }
+
     public void setBota(int bota) {
         this.bota = bota;
     }
-    
+}
 
     
     
